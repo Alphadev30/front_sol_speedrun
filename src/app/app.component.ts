@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { WalletComponent } from './components/wallet/wallet.component'; // ✅ Import WalletComponent
+import { WalletComponent } from './components/wallet/wallet.component'; // Import WalletComponent
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
-  standalone: true, // ✅ Required for standalone components
-  imports: [WalletComponent], // ✅ Add WalletComponent here instead of app.config.ts
+  styleUrls: ['./app.component.scss'],
+  standalone: true,
+  imports: [WalletComponent], // Add WalletComponent to imports
 })
 export class AppComponent {
   title = 'solspeed';
