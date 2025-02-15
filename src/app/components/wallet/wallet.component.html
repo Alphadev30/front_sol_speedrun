@@ -1,0 +1,12 @@
+<div class="wallet-container">
+    <button *ngIf="!walletService.connected" (click)="connect()" class="connect-btn">
+      Connect Wallet
+    </button>
+  
+    <div *ngIf="walletService.connected" class="wallet-info">
+      <p>Wallet Connected:</p>
+      <p>{{ walletService.publicKey?.toBase58() }}</p>
+      <button (click)="disconnect()" class="disconnect-btn">Disconnect</button>
+    </div>
+  </div>
+  

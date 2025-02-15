@@ -1,0 +1,25 @@
+.wallet-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  
+    .connect-btn, .disconnect-btn {
+      background: #512da8;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+  
+    .wallet-info {
+      background: #eee;
+      padding: 10px;
+      border-radius: 5px;
+      text-align: center;
+    }
+  }
+  
